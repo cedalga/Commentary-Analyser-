@@ -4,6 +4,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from googletrans import Translator
 
+nltk.download('punkt_tab')
+nltk.download('wordnet')
+nltk.download('stopwords')
+
 translator = Translator(service_urls=[
       'translate.googleapis.com'
     ])
